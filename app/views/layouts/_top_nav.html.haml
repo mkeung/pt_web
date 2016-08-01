@@ -2,7 +2,11 @@
   .container
     = link_to root_path, class: "navbar-brand" do
       PT Web
+
     %ul.nav.navbar-nav
+      
+
+    %ul.nav.navbar-nav.pull-xs-right
       - if current_user
         %li.nav-item.active
           = link_to destroy_user_session, method: :delete, class: "nav-link" do
@@ -11,3 +15,6 @@
         %li.nav-item.active
           = link_to new_user_session_path, class: "nav-link" do
             Sign In
+        %li.nav-item.active
+          = link_to new_user_registration_path, class: "nav-link" do
+            Register
