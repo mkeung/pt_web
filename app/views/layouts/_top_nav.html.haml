@@ -1,0 +1,13 @@
+%nav.navbar.navbar-light.bg-faded
+  .container
+    = link_to root_path, class: "navbar-brand" do
+      PT Web
+    %ul.nav.navbar-nav
+      - if current_user
+        %li.nav-item.active
+          = link_to destroy_user_session, method: :delete, class: "nav-link" do
+            Sign Out
+      - else
+        %li.nav-item.active
+          = link_to new_user_session_path, class: "nav-link" do
+            Sign In
