@@ -40,6 +40,7 @@ gem 'aws-sdk'
 
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
 gem 'haml'
+gem 'haml-rails'
 gem 'font-awesome-rails'
 
 group :development, :test do
