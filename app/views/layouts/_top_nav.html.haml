@@ -1,20 +1,32 @@
 %nav.navbar.navbar-light.bg-faded
   .container
     = link_to root_path, class: "navbar-brand" do
-      PT Web
+      Strength to Size
 
     %ul.nav.navbar-nav
-      
+      %li.nav-item
+        = link_to 'https://www.facebook.com/strengthtosize', class: "nav-link", target: "_blank" do
+          %i.fa.fa-facebook{"aria-hidden" => "true"}
+          
+      %li.nav-item
+        = link_to 'https://www.instagram.com/strengthtosize', class: "nav-link", target: "_blank"  do
+          %i.fa.fa-instagram{"aria-hidden" => "true"}
 
     %ul.nav.navbar-nav.pull-xs-right
+      %li.nav-item
+        = link_to 'About Kay Kay', about_path, class: "nav-link"
+
+      %li.nav-item
+        = link_to 'Contact Me', contact_path, class: "nav-link"
+
       - if current_user
-        %li.nav-item.active
+        %li.nav-item
           = link_to destroy_user_session_path, method: :delete, class: "nav-link" do
             Sign Out
       - else
-        %li.nav-item.active
+        %li.nav-item
           = link_to new_user_session_path, class: "nav-link" do
             Sign In
-        %li.nav-item.active
+        %li.nav-item
           = link_to new_user_registration_path, class: "nav-link" do
             Register

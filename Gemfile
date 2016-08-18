@@ -39,9 +39,10 @@ gem 'paperclip'
 gem 'aws-sdk'
 
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
+gem 'font-awesome-sass'
+
 gem 'haml'
 gem 'haml-rails'
-gem 'font-awesome-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
