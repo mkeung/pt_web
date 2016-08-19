@@ -22,6 +22,8 @@
 
   .section3.content-section
     .container
+      = link_to 'Learn More', about_path, class: "btn btn-primary btn-sm section-button"
+
       .center-text
         %h4.display-4
           Kay Kay Keung
@@ -29,52 +31,74 @@
           %small.text-muted
             Founder, Strength & Conditioning Coach
 
-      %hr
-      %ul
-        %li BA Exercise and Sport Science - University of North Carolina
-        %li Certified Strength and Conditioning Specialist - National Strength and Conditioning Association
-        %li Sports Performance Coach – USA Weightlifting
-        %li Certified Exercise Physiologist - American College of Sports Medicine
-        %li Precision Nutrition Certified - Precision Nutrition
-        %li Joint Mobility & Movement Instructor - Agatsu
-        %li Pre & Post Natal Fitness Instructor - Asian Academy for Sports & Fitness Professionals
-        %li Certified Personal Trainer – PTA Global
-        %li Kettlebell Instructor - Agatsu
-        %li TRX Suspension Trainer - TRX
- 
-      %hr
       
-      %ul
-        %li Hong Kong National Lacrosse Team
-        %li Lacrosse League Champion Team - Hong Kong Lacrosse League
-        %li Limitless Challenge Champion, Advance 2 Division – Tissot Limitless Challenge
-        %li 4x Marathon Runner
-        %li Lacrosse National Champion Team – Women’s Collegiate Lacrosse Association DII
-        %li Cross Country Champion Team - University Sports Federation of Hong Kong
-        %li Cross Country Most Valuable Player – University of Hong Kong
+      
+      
 
 
   .section4
     .container
-      .card-group
-        .card
-          %img.card-img-top{:alt => "Card image cap", :src => "..."}/
-          .card-block
-            %h4.card-title Personal Training
-            %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-            %p.card-text
-              %small.text-muted Last updated 3 mins ago
-        .card
-          %img.card-img-top{:alt => "Card image cap", :src => "..."}/
-          .card-block
-            %h4.card-title Online
-            %p.card-text This card has supporting text below as a natural lead-in to additional content.
-            %p.card-text
-              %small.text-muted Last updated 3 mins ago
-        .card
-          %img.card-img-top{:alt => "Card image cap", :src => "..."}/
-          .card-block
-            %h4.card-title Hybrid
-            %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
-            %p.card-text
-              %small.text-muted Last updated 3 mins ago
+      .card-deck-wrapper
+        .card-deck
+          .card
+            %img.card-img-top{:alt => "Card image cap", :src => "..."}/
+            .card-block
+              %h4.card-title Personal Training Program
+              %p.card-text
+                1-on-1 private sessions for maximally individualized coaching
+              %p.card-text
+                %b Studio
+                %br/
+                1-9 Sessions 800HKD/hr
+                %br/
+                10-19 Sessions 750HKD/hr
+                %br/
+                20-30 Sessions 700HKD/hr
+
+              %p.card-text
+                %b Outdoor/Clubhouse
+                %br/
+                1-9 Sessions 650HKD/hr
+                %br/
+                10-19 Sessions 600HKD/hr
+                %br/
+                20-30 Sessions 550HKD/hr
+                %br/
+                %span.text-muted *Rates do not include clubhouse entry fee
+
+              = link_to 'Start Now', contact_path
+
+              
+          .card
+            %img.card-img-top{:alt => "Card image cap", :src => "..."}/
+            .card-block
+              %h4.card-title Online Program
+              %p.card-text
+                Convenient online programming with coaching and feedback for the independent individual
+              %p.card-text
+                1 Month 1000HKD/month
+                %br/
+                3 Months 900HKD/month
+                %br/
+                6 Months 800HKD/month
+
+              = link_to 'Start Now', contact_path
+
+          .card
+            %img.card-img-top{:alt => "Card image cap", :src => "..."}/
+            .card-block
+              %h4.card-title Hybrid Program
+              %p.card-text
+                Combination of 1-on-1 in person sessions supplemented with online coaching
+              %p.card-text
+                Personal Training Rate + 600HKD/month
+
+              %p.card-text
+                %span.text-muted*Minimum 1 Personal Training session/week
+                %br/
+                %span.text-muted*Contact for corporate or group training
+
+              = link_to 'Start Now', contact_path
+
+
+
