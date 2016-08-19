@@ -10,15 +10,24 @@
 
   .section2
     .container
-      = image_tag('partner_logos/hk_weightlifting.png')
-      = image_tag('partner_logos/inspiringhk.png')
-      = image_tag('partner_logos/warrior_academy.png')
+      = link_to 'http://hongkongweightlifting.com', target: "_blank" do
+        = image_tag('partner_logos/hk_weightlifting.png')
+
+      = link_to 'http://inspiringhk.org', target: "_blank" do
+        = image_tag('partner_logos/inspiringhk.png')
+      
+      = link_to 'http://warrioracademyhk.com', target: "_blank" do
+        = image_tag('partner_logos/warrior_academy.png')
 
 
-  .section3
+  .section3.content-section
     .container
-      %h2 Kay Kay Keung
-      %h4 Founder, Strength & Conditioning Coach
+      .center-text
+        %h4.display-4
+          Kay Kay Keung
+        %h4
+          %small.text-muted
+            Founder, Strength & Conditioning Coach
 
       %hr
       %ul
@@ -43,3 +52,29 @@
         %li Lacrosse National Champion Team – Women’s Collegiate Lacrosse Association DII
         %li Cross Country Champion Team - University Sports Federation of Hong Kong
         %li Cross Country Most Valuable Player – University of Hong Kong
+
+
+  .section4
+    .container
+      .card-group
+        .card
+          %img.card-img-top{:alt => "Card image cap", :src => "..."}/
+          .card-block
+            %h4.card-title Personal Training
+            %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            %p.card-text
+              %small.text-muted Last updated 3 mins ago
+        .card
+          %img.card-img-top{:alt => "Card image cap", :src => "..."}/
+          .card-block
+            %h4.card-title Online
+            %p.card-text This card has supporting text below as a natural lead-in to additional content.
+            %p.card-text
+              %small.text-muted Last updated 3 mins ago
+        .card
+          %img.card-img-top{:alt => "Card image cap", :src => "..."}/
+          .card-block
+            %h4.card-title Hybrid
+            %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+            %p.card-text
+              %small.text-muted Last updated 3 mins ago
