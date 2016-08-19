@@ -1,4 +1,4 @@
-%nav.navbar.navbar-light.bg-faded
+%nav.navbar.navbar-dark
   .container
     = link_to root_path, class: "navbar-brand" do
       = image_tag('main_logo.png')
@@ -24,9 +24,9 @@
           = link_to destroy_user_session_path, method: :delete, class: "nav-link" do
             Sign Out
       - else
-        %li.nav-item
-          = link_to new_user_session_path, class: "nav-link" do
-            Sign In
-        %li.nav-item
-          = link_to new_user_registration_path, class: "nav-link" do
-            Register
+        // %li.nav-item
+        //   = link_to new_user_session_path, class: "nav-link" do
+        //     Sign In
+        // %li.nav-item
+        //   = link_to new_user_registration_path, class: "nav-link" do
+        //     Register
