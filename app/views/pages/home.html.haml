@@ -104,4 +104,38 @@
               = link_to 'Start Now', contact_path, class: "btn btn-primary btn-sm"
 
 
+  .section5
+    #carousel-testimonials.carousel.slide{"data-ride" => "carousel"}
+      %ol.carousel-indicators
+        %li.active{"data-slide-to" => "0", "data-target" => "#carousel-testimonials"}
+        %li{"data-slide-to" => "1", "data-target" => "#carousel-testimonials"}
+        %li{"data-slide-to" => "2", "data-target" => "#carousel-testimonials"}
+      .carousel-inner{:role => "listbox"}
+        .carousel-item.active
+          .container
+            %h3
+              I always thought i was too old to start learning gymnastics. With Kay Kay's help, I'm getting stronger and more confident, achieving more than I ever thought possible!
+            %h4.text-lg-right
+              Nicky, Corporate Lawyer, Personal Training
+        .carousel-item
+          .container
+            %h3
+              When I started with Kay Kay I could barely do one pull up, but now I can even do them with weights attached! Her instructions are clear and she's helped me push myself further than I had before.
+            %h4.text-lg-right
+              Tom, Banking Lawyer, Personal Training
+        .carousel-item
+          .container
+            %h3
+              My program has many challenging points but it is all worth it! I went from being anxious to feeling a lot more self-confident and stronger as I progress, physically as well as mentally!
+            %h4.text-lg-right 
+              Carrie, Graphic Designer, Hybrid Training
+
+      %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-testimonials", :role => "button"}
+        %span.icon-prev{"aria-hidden" => "true"}
+        %span.sr-only Previous
+      %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-testimonials", :role => "button"}
+        %span.icon-next{"aria-hidden" => "true"}
+        %span.sr-only Next
+
+
 
